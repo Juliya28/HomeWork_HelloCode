@@ -6,6 +6,8 @@ int N = 1;
 while (N <= num)
 {
     if(N % 2 == 0)
+    {
     Console.WriteLine(N);
+    }
     N++;
 }
