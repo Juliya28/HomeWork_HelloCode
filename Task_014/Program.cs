@@ -2,13 +2,13 @@
 
 Console.WriteLine("Введите число: ");
 int num = int.Parse(Console.ReadLine());
-int number = num / 100 % 10;
+int number = num % 10;
 
-if (number > 0)
+if (num < 100)
 {
-    Console.WriteLine(number);
+    Console.WriteLine("Третья цифра отсутствует");
 }
 else 
 {
-    Console.WriteLine("Третья цифра отсутствует");
+    Console.WriteLine(number);
 }
