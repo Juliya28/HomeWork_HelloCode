@@ -1,16 +1,17 @@
 ﻿// Даны два числа. Показать большее и меньшее число.
 
-int a1 = 8;
-int a2 = 10;
-if (a1 > a2)
+int a1 = 12;
+int a2 = 14;
+int max = a1;
+if (a2 < max)
 {
-    Console.WriteLine("Большее: " + a1);
+    Console.WriteLine("Большее: " + max);
     Console.WriteLine("Меньшее: " + a2);
 }
-else if (a1 < a2)
+else if (max < a2)
 {
     Console.WriteLine("Большее: " + a2);
-    Console.WriteLine("Меньшее: " + a1);
+    Console.WriteLine("Меньшее: " + max);
 }
 else
 {
