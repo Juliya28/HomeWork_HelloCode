@@ -1,14 +1,22 @@
 ﻿// 14.	Найти третью цифру числа или сообщить, что её нет.
 
-Console.WriteLine("Введите число: ");
-int num = int.Parse(Console.ReadLine());
-int number = num % 10;
-
-if (num < 100)
+int GetRandomNumber()
 {
-    Console.WriteLine("Третья цифра отсутствует");
+    int randomNumber = new Random().Next(0, 10000);
+    return randomNumber;
 }
-else 
+int randomValue = GetRandomNumber();
+Console.WriteLine($"Дано число: {randomValue}");
+while (randomValue > 999)
 {
-    Console.WriteLine(number);
+    randomValue = randomValue / 10;
 }
+   Console.WriteLine($"Необходимый диапазон {randomValue}");
+   if (randomValue >= 100)
+   {
+       Console.WriteLine($"Третье число {randomValue % 10}");
+   } 
+   else
+   {
+       Console.WriteLine($"Третьего числа нет");
+   }
