@@ -1,20 +1,21 @@
 ﻿// 25.	Найти сумму чисел от 1 до А.
 
-Console.WriteLine("Введите число: ");
-int A = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите число А: ");
+int num = int.Parse(Console.ReadLine());
+Console.WriteLine();
+Console.Write("Числа от 1 до А: " + "\t");
 Console.WriteLine();
 
-int[] array = new int[A];
-
-//int summ = 0;
-
-for (int i = 1; i <= array.Length; i++)
+int summ = 0;
+for (int i = 1; i <= num; i++)
 {
-    // int summ = summ + array[i];
-    Console.WriteLine(array[i]);
-    //Console.WriteLine(i);
+    Console.Write($"{i}" + "\t");
 }
-
-
-    // result = i + (i+1);
-    // Console.WriteLine(i);
+Console.WriteLine();
+for (int i = 1; i <= num; i++)
+{
+    summ = summ + i;
+}
+Console.WriteLine();
+Console.WriteLine("Сумма чисел от 1 до А: " + summ);
+Console.WriteLine();
