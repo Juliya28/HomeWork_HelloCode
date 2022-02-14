@@ -1,21 +1,16 @@
 ﻿// 29.	Написать программу вычисления произведения чисел от 1 до N.
 
 Console.WriteLine("Введите число N: ");
-int num = int.Parse(Console.ReadLine());
+int num1 = int.Parse(Console.ReadLine());
 Console.WriteLine();
 Console.Write("Числа от 1 до N: " + "\t");
 Console.WriteLine();
 
-int summ = 1;
-for (int i = 1; i <= num; i++)
+int num = 1;
+for (int i = 1; i <= num1; i++)
 {
-    Console.Write($"{i}" + "\t");
+    num = num * i;
 }
 Console.WriteLine();
-for (int i = 1; i <= num; i++)
-{
-    summ = summ * i;
-}
-Console.WriteLine();
-Console.WriteLine("Произведение чисел от 1 до N: " + summ);
+Console.WriteLine("Произведение чисел от 1 до N: " + num);
 Console.WriteLine();
