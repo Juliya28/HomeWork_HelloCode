@@ -29,7 +29,7 @@ int negative = 0;
 
 for (int i = 0; i < array.Length; i++)
 {
-    if (array[i] > 0) positive += 1;
-    else negative += 1;
+    if (array[i] > 0) positive += array[i];
+    else negative += array[i];
 }
-Console.WriteLine($"В заданном массиве {positive} положительных чисел и {negative} отрицательных чисел");
+Console.WriteLine($"Сумма положительных чисел = {positive} и сумма отрицательных чисел = {negative}");
