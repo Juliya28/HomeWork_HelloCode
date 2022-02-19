@@ -1,14 +1,14 @@
 ﻿// 40.	В указанном массиве вещественных чисел найдите разницу между максимальным и минимальным элементом.
 
-void FillArray (int[] mass)
+void FillArray (double[] mass)
 {
     for (int i = 0; i < mass.Length; i++)
     {
-        mass[i] = new Random(). Next(1, 100);
+        mass[i] = new Random(). Next(-100, 100);
     }
 }
 
-void PrintArray (int[] arr)
+void PrintArray (double[] arr)
 {
     for (int j = 0; j < arr.Length; j++)
     {
@@ -18,14 +18,14 @@ void PrintArray (int[] arr)
 }
 
 Console.Clear();
-int[] array = new int [11];
+double[] array = new double [11];
 
 FillArray (array);
 PrintArray (array);
 Console.WriteLine();
 
-int max = array[0];
-int min = array[0];
+double max = array[0];
+double min = array[0];
 
 for (int i = 0; i < array.Length; i++)
 {
