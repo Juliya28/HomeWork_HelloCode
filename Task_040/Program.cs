@@ -2,9 +2,10 @@
 
 void FillArray (double[] mass)
 {
+    Random arr = new Random();
     for (int i = 0; i < mass.Length; i++)
     {
-        mass[i] = new Random(). Next(-100, 100);
+        mass[i] = arr.NextDouble();
     }
 }
 
