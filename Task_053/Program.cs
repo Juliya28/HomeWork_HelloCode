@@ -7,7 +7,7 @@ int m = int.Parse(Console.ReadLine());
 Console.Write("Введите число, которое даст количество столбцов: ");
 int n = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число: ");
-int num = int.Parse(Console.ReadLine());//int InPutNumber = GetNumber
+int num = int.Parse(Console.ReadLine());
 
 Console.WriteLine();
 
@@ -37,6 +37,7 @@ void PrintArray(int[,] array)
 }
 FillArray(array);
 PrintArray(array);
+Console.WriteLine("===================");
 
 bool position = true;
 void SearchNumber(int num)
